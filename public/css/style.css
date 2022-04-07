@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body{
+    margin: 0;
+    text-align: justify;
+    font-family: 'Anek Telugu', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+
+
+header{
+    z-index: 2;
+    position:          sticky;
+    top:                    0;
+    width:               100%;
+    background-color: black;
+    color:            beige;
+    display:                 flex;
+    justify-content:     flex-end;
+    align-items:           center;
+}
+header nav {
+    width: 60%;
+}
+header ul {
+    display:                  flex;
+    justify-content:        center;
+    align-items:            center;
+}
+header li {
+    text-decoration: underline .12rem;
+    margin-left:      10%;
+    width:            10%;
+    list-style-type: none;
+}
+.fontAwesome {
+    width:                  30%;
+    display:               flex;
+    justify-content: flex-start;
+}
+.fontAwesome i {
+    margin-left:           1rem;
+}
+
+
+main{
+    margin:                  auto;
+    width:                    80%;
+}
+section {
+    line-height:             2rem;
+}
+article {
+    display:                 flex;
+    flex-direction:        column;
+    justify-content: flex-start;
+}
+h1, h2{
+    font-size:                2em;
+    font-weight:              200;
+    line-height: 3rem;   
+    text-align: inherit;
+}
+
+
+
+section:nth-child(4) {
+    display:                  flex;
+    justify-content: space-between;
+    align-items:        flex-start;
+    flex-wrap:      wrap;
+}
+section:nth-child(4) article{
+width: 48%;
+}
+section:nth-child(8) {
+    display:                  flex;
+    justify-content: space-between;
+    align-items:        flex-start;
+}
+section:nth-child(8) article {
+    width: 30%;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+}
+footer p{
+    color:      grey;
+}
+footer span {
+    margin: auto .2rem;
+}
+span:nth-child(2) {
+    padding: 0 .2rem;
+    border-right: .1em solid grey;
+    border-left:  .1em solid grey;
+}
+
+@keyframes slideshow {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    40% { left: -100%; }
+    55% { left: -100%; }
+    70% { left: -200%; }
+    85% { left: -200%; }
+    100% { left: -300%; }
+    }
+    body { margin: 0; } 
+    div#slider { overflow: hidden; }
+    div#slider figure img { width: 20%; float: left; }
+    div#slider figure { 
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 20s slideshow infinite; 
+    }
+
+@media screen and (max-width: 768px) {
+    header{
+        flex-direction: column;
+    }
+    header ul, .fontAwesome {
+        width: 80%;
+        justify-content: center;
+
+    }
+    section {
+        width: 100%;
+        flex-direction: column;
+    }
+    section article {
+        width: 95%;
+        text-align: center;
+    }
+}
